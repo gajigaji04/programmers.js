@@ -13,6 +13,7 @@
 // 출력 #1
 // HelloWorld!
 
+1;
 const readline = require("readline");
 const rl = readline.createInterface({
   input: process.stdin,
@@ -25,7 +26,9 @@ rl.on("line", function (line) {
   input = [line];
 }).on("close", function () {
   str = input[0];
+  // 2. str 출력
+  console.log(str);
 });
 
-// console.log로 str("문자열") 출력
+// 1. console.log로 str("문자열") 출력
 console.log("Hello World!");
