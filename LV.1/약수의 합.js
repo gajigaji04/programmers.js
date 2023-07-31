@@ -19,9 +19,11 @@ n	return
 */
 
 function solution(n) {
+  // 변수 선언 (answer = 0)
   var answer = 0;
 
   for (i = 0; i <= n; i++) {
+    //n을 i로 나눈 나머지가 0인지 확인
     if (n % i === 0) {
       answer += i;
     }

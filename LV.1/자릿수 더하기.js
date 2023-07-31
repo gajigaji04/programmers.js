@@ -20,12 +20,14 @@ N	answer
 */
 
 function solution(n) {
+  // answer = 개별 자릿수의 합계를 저장
   var answer = 0;
 
+  // 마지막 자리 제거
   while (n > 0) {
     answer += Math.floor(n % 10);
     n /= 10;
   }
-
+  //개별 자릿수 합계를 포함 반환
   return answer;
 }

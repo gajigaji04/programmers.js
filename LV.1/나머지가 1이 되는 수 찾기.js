@@ -20,8 +20,10 @@ n	result
 */
 
 function solution(n) {
+  // 변수 선언 (x = 1)
   var x = 1;
   while (true) {
+    // n을x로 나눈 나머지가 1인지 확인
     if (n % x === 1) {
       return x;
     }
