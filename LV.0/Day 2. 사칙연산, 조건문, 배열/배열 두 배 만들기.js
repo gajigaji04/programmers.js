@@ -20,8 +20,14 @@ numbers	                    result
 [1, 2, 100, -99, 1, 2, 3]의 각 원소에 두배를 한 배열 [2, 4, 200, -198, 2, 4, 6]을 return합니다.
 */
 
+1;
 function solution(numbers) {
   return numbers.map(function (element) {
     return element * 2;
   });
+}
+
+2;
+function solution(numbers) {
+  return numbers.map((number) => number * 2);
 }
